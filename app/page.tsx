@@ -66,7 +66,102 @@ export default function Page(): React.ReactElement {
            <SkillSection/>
 
           <ObjectSection/>
-          <div className="col-span-12 contianer-border-style h-[calc(100vh-100px)]">
+           <div className="col-span-2 md:col-span-6 lg:col-span-12 w-full  max-w-7xl mx-auto grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-6 lg:grid-cols-9 xl:grid-cols-12  ">
+          <ItemContainer href="/3d/urban" title="Urban Design">
+            <Image
+              src="/3d/urban/urban.png"
+              alt="vav"
+              width={400}
+              height={400}
+              className="w-full h-auto object-cover"
+            />
+          </ItemContainer>
+
+          <ItemContainer
+            href="/ui-lib"  
+            title="UI Library"
+          >
+            <Image
+              src="/ui-lib.png"
+              alt="vav"
+              width={400}
+              height={400}
+              className="w-full p-4 h-auto object-contain"
+            /> 
+          </ItemContainer>
+          
+          <ItemContainer
+            title="Safakat"
+            href="/3d/safakat"
+          >
+            <Image
+              src="/3d/safakat/safakathouse.png"
+              alt="vav"
+              width={400}
+              height={400}
+              className="w-full h-auto object-contain"
+            />
+          </ItemContainer>
+          
+          <ItemContainer title="Residence" href="/3d/residence">
+            <Image
+              src="/3d/residence/residence5.png"
+              alt="vav"
+              width={400}
+              height={400}
+              className="w-full h-auto object-contain"
+            />
+          </ItemContainer>
+
+          <ItemContainer title="Canteen" href="/3d/canteen">
+            <Image
+              src="/3d/canteen/canteen.png"
+              alt="masshousing"
+              width={400}
+              height={400}
+              className="w-full h-full object-contain"
+            />
+          </ItemContainer>
+
+          <ItemContainer title="Vav" href="/3d/vav">
+            <Image
+              src="/3d/vav/vav.png"
+              alt="vav"
+              width={400}
+              height={400}
+              className="w-full h-auto object-contain"
+            />
+          </ItemContainer>
+          
+          <ItemContainer title="Mass Housing" href="/3d/masshousing">
+            <Image
+              src="/3d/masshousing/masshousing.jpg"
+              alt="masshousing"
+              width={400}
+              height={400}
+              className="w-full h-full object-cover"
+            />
+          </ItemContainer>
+
+          <ItemContainer title="Flow Builder" href="/worflow-builder">
+            <Image
+              src="/flow-builder.png"
+              alt="flow-builder"
+              width={200}
+              height={200}
+              className="w-full h-full object-contain"
+            />
+          </ItemContainer>
+           <ItemContainer title="Google Keep clone" href="/https://google-keep-clone-eta-steel.vercel.app/">
+            <Image
+              src="/keep-clone.png"
+              alt="Keep clone"
+              width={200}
+              height={200}
+              className="w-full h-full object-cover"
+            />
+          </ItemContainer>
+          <div className="col-span-6 aspect-square contianer-border-style h-[calc(100vh-100px)]">
             {/* <AestheticSceneR3F /> */}
             <iframe
             src="https://architecture-3d.vercel.app/aesthetic"
@@ -76,6 +171,8 @@ export default function Page(): React.ReactElement {
             allowFullScreen
           />
           </div>
+        </div>
+          
         </div>
       </div>
     </React.StrictMode>

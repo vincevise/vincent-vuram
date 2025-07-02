@@ -31,7 +31,7 @@ const ObjectSection = (props: Props) => {
               <MdOutlineArrowOutward className="w-6 h-6" />
             </Link>
             <div className="grid grid-cols-4 gap-2 p-3">
-              <div className=" col-span-2   aspect-square p-4 border rounded-md cursor-pointer hover:bg-gray-200 ">
+              <div className=" col-span-2   aspect-square p-4 border border-gray-500 rounded-md cursor-pointer hover:bg-gray-200 ">
                 <Image
                   alt="origami-1"
                   width={200}
@@ -40,7 +40,7 @@ const ObjectSection = (props: Props) => {
                   src={"/main-page/origami-1.png"}
                 />
               </div>
-              <div className=" col-span-2   aspect-square p-4 border rounded-md cursor-pointer hover:bg-gray-200">
+              <div className=" col-span-2   aspect-square p-4 border border-gray-500 rounded-md cursor-pointer hover:bg-gray-200">
                 <Image
                   alt="origami-2"
                   width={200}
@@ -49,7 +49,7 @@ const ObjectSection = (props: Props) => {
                   src={"/main-page/origami-2.png"}
                 />
               </div>
-              <div className=" col-span-2   aspect-square p-4 border rounded-md cursor-pointer hover:bg-gray-200">
+              <div className=" col-span-2   aspect-square p-4 border border-gray-500 rounded-md cursor-pointer hover:bg-gray-200">
                 <Image
                   alt="origami-3"
                   width={200}
@@ -58,7 +58,7 @@ const ObjectSection = (props: Props) => {
                   src={"/main-page/origami-3.png"}
                 />
               </div>
-              <div className=" col-span-2   aspect-square p-4 border rounded-md cursor-pointer hover:bg-gray-200">
+              <div className=" col-span-2   aspect-square p-4 border border-gray-500 rounded-md cursor-pointer hover:bg-gray-200">
                 <Image
                   alt="origami-4"
                   width={200}

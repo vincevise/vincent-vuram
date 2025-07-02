@@ -21,7 +21,7 @@ const ItemContainer = ({col=3, children, height, title, pointerEventNone, onClic
   const router = useRouter()
   return (
     <div 
-        className={`bg-white  overflow-hidden flex items-center justify-center text-center ${!height && 'aspect-square'}  rounded-xl border-2 border-black  shadow-[1px_1px_0px_1px_#000000] relative group`}
+        className={`bg-white  overflow-hidden flex items-center justify-center text-center ${!height && 'aspect-square'}  contianer-border-style relative group`}
         style={{
             height,
             gridColumn: `span ${col} / span ${col}`,
@@ -45,16 +45,7 @@ const ItemContainer = ({col=3, children, height, title, pointerEventNone, onClic
       group-hover:translate-y-0 
       hover:border-gray-900 
   transition-all duration-500 drop-shadow-lg "
-                // onClick={()=>{
-                //   console.log('on click triggering')
-                //   if(onClick){
-                //     onClick()
-                //   }
-                //   if(href){
-                //     console.log('pusing')
-                //     router.push(href)
-                //   }
-                // }}
+             
               >
                 <MdOutlineArrowOutward className="w-6 h-6" />
               </Link>

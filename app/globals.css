@@ -103,16 +103,16 @@ input{
 
 .contianer-border-style {
   border-radius: 0.75rem;             /* rounded-xl */
-  border: 2px solid #000000;          /* border-2 border-black */
-  box-shadow: 1px 1px 0px 1px #000000; /* custom shadow */
+  border: 2px solid oklch(37.3% 0.034 259.733);          /* border-2 border-black */
+  box-shadow: 1px 1px 0px 1px oklch(37.3% 0.034 259.733); /* custom shadow */
   overflow: hidden;
 }
 
 
 .contianer-border-style-sm {
   border-radius: 0.40rem;             /* rounded-xl */
-  border: 1px solid #000000;          /* border-2 border-black */
-  box-shadow: 1px 1px 0px 1px #000000; /* custom shadow */
+  border: 1px solid oklch(37.3% 0.034 259.733);          /* border-2 border-black */
+  box-shadow: 1px 1px 0px 1px oklch(37.3% 0.034 259.733); /* custom shadow */
 }
 
 .input-container-style {
