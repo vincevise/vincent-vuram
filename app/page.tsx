@@ -10,6 +10,9 @@ import ItemContainer from "@/components/ui-components/item-container";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { PiDotsSixVerticalBold } from "react-icons/pi";
+import Chip from "@/components/ui-components/chip";
+import NoSignal from "@/components/tv-grain";
 
 // Explicitly define the component return type
 export default function Page(): React.ReactElement {
@@ -45,8 +48,9 @@ export default function Page(): React.ReactElement {
 
             <CvSection />
           </div>
-          <div className="col-span-12 lg:col-span-3 group relative">
-            <Link className="w-full block h-full relative " href={"/work"}>
+          <div className="col-span-12 lg:col-span-3 group relative contianer-border-style">
+            <NoSignal/>
+            {/* <Link className="w-full block h-full relative " href={"/work"}>
             <motion.div whileHover={{ scale: 1.1 }} className="cursor-pointer">
               <div className="text-xl font-medium text-black absolute top-6 left-6">
                   WORK
@@ -60,7 +64,7 @@ export default function Page(): React.ReactElement {
                   src={"/3d/urban/urban.png"}
                 />
             </motion.div>
-            </Link>
+            </Link> */}
           </div>
 
            <SkillSection/>
@@ -152,14 +156,41 @@ export default function Page(): React.ReactElement {
               className="w-full h-full object-contain"
             />
           </ItemContainer>
-           <ItemContainer title="Google Keep clone" href="/https://google-keep-clone-eta-steel.vercel.app/">
-            <Image
+           <ItemContainer  
+          //  href="/https://google-keep-clone-eta-steel.vercel.app/"
+           >
+            <div className="w-full h-full flex ">
+              <div className=" h-full px-0.5 flex flex-col justify-end py-4 bg-gray-100 rounded-l-md  cursor-move  ">
+                <PiDotsSixVerticalBold className="w-8 h-8"/> 
+              </div>
+              <div className="w-full h-full p-3 text-left flex flex-col">
+                <div className="w-full h-full">
+                  <Link href={'https://google-keep-clone-eta-steel.vercel.app/'} className="font-medium  text-lg w-full outline-none hover:underline">Google Keep Clone</Link>
+                  <div className="w-full h-fit mt-4 text-gray-500 text-sm space-y-2">
+                    <p className="">
+                      Made a Google Keep clone in React — now I have more states than the United States.
+                    </p>
+                    <p>
+                      I built a Google Keep clone for my portfolio. It's like Google Keep… but it only keeps my hopes of becoming a full-stack dev alive.
+                    </p>
+                  </div>
+                  <div className="mt-10 w-full flex-wrap flex items-center gap-2">
+                    <Chip value="PERN"  onClose={()=>{}}/>
+                    <Chip value="T3-Stack"  onClose={()=>{}}/>
+                  </div>
+
+                </div>
+                <div>
+                </div>
+              </div>
+            </div>
+            {/* <Image
               src="/keep-clone.png"
               alt="Keep clone"
               width={200}
               height={200}
               className="w-full h-full object-cover"
-            />
+            /> */}
           </ItemContainer>
           <div className="col-span-6 aspect-square contianer-border-style h-[calc(100vh-100px)]">
             {/* <AestheticSceneR3F /> */}

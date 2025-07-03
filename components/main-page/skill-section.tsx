@@ -16,40 +16,40 @@ const SkillSection = (props: Props) => {
                 </div>
                 <div className="grid grid-cols-4  gap-2 w-[60%]">
                   {/* Frontend Skills */}
-                  <div className="aspect-square border border-gray-500 rounded-lg flex items-center justify-center p-5">
+                  <div className="aspect-square bg-gray-50 rounded-lg flex items-center justify-center p-5">
                     <SiJavascript className="w-full h-full" />
                   </div>
-                  <div className="aspect-square border border-gray-500 rounded-lg flex items-center justify-center p-5">
+                  <div className="aspect-square bg-gray-50 rounded-lg flex items-center justify-center p-5">
                     <RiNextjsFill className="w-full h-full" />
                   </div>
-                  <div className="aspect-square border border-gray-500 rounded-lg flex items-center justify-center p-5">
+                  <div className="aspect-square bg-gray-50 rounded-lg flex items-center justify-center p-5">
                     <FaReact className="w-full h-full" />
                   </div>
-                  <div className="aspect-square border border-gray-500 rounded-lg flex items-center justify-center p-5">
+                  <div className="aspect-square bg-gray-50 rounded-lg flex items-center justify-center p-5">
                     <FaNodeJs className="w-full h-full" />
                   </div>
-                  <div className="aspect-square border border-gray-500 rounded-lg flex items-center justify-center p-5">
+                  <div className="aspect-square bg-gray-50 rounded-lg flex items-center justify-center p-5">
                     <RiTailwindCssFill className="w-full h-full" />
                   </div>
-                  <div className="aspect-square border border-gray-500 rounded-lg flex items-center justify-center p-5">
+                  <div className="aspect-square bg-gray-50 rounded-lg flex items-center justify-center p-5">
                     <FaAws className="w-full h-full" />
                   </div>
-                  <div className="aspect-square border border-gray-500 rounded-lg flex items-center justify-center p-5">
+                  <div className="aspect-square bg-gray-50 rounded-lg flex items-center justify-center p-5">
                     <SiPostgresql className="w-full h-full" />
                   </div>
-                  <div className="aspect-square border border-gray-500 rounded-lg flex items-center justify-center p-5">
+                  <div className="aspect-square bg-gray-50 rounded-lg flex items-center justify-center p-5">
                     <SiMongodb className="w-full h-full" />
                   </div>
-                  <div className="aspect-square border border-gray-500 rounded-lg flex items-center justify-center p-5">
+                  <div className="aspect-square bg-gray-50 rounded-lg flex items-center justify-center p-5">
                     <GrMysql className="w-full h-full" />
                   </div>
-                  <div className="aspect-square border border-gray-500 rounded-lg flex items-center justify-center p-5">
+                  <div className="aspect-square bg-gray-50 rounded-lg flex items-center justify-center p-5">
                     <SiAdobephotoshop className="w-full h-full" />
                   </div>
-                  <div className="aspect-square border border-gray-500 rounded-lg flex items-center justify-center p-5">
+                  <div className="aspect-square bg-gray-50 rounded-lg flex items-center justify-center p-5">
                     <SiAdobeillustrator className="w-full h-full" />
                   </div>
-                  <div className="aspect-square border border-gray-500 rounded-lg flex items-center justify-center p-5">
+                  <div className="aspect-square bg-gray-50 rounded-lg flex items-center justify-center p-5">
                     <SiAdobexd className="w-full h-full" />
                   </div>
                 </div>
