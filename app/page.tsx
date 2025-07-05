@@ -13,6 +13,7 @@ import React from "react";
 import { PiDotsSixVerticalBold } from "react-icons/pi";
 import Chip from "@/components/ui-components/chip";
 import NoSignal from "@/components/tv-grain";
+import SocioGramPost from "@/components/main-page/sociaogram-card";
 
 // Explicitly define the component return type
 export default function Page(): React.ReactElement {
@@ -191,6 +192,12 @@ export default function Page(): React.ReactElement {
               height={200}
               className="w-full h-full object-cover"
             /> */}
+          </ItemContainer>
+           <ItemContainer  
+          //  href="/https://google-keep-clone-eta-steel.vercel.app/"
+           >
+             <SocioGramPost/>
+            
           </ItemContainer>
           <div className="col-span-6 aspect-square contianer-border-style h-[calc(100vh-100px)]">
             {/* <AestheticSceneR3F /> */}

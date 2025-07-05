@@ -12,7 +12,7 @@ const page = () => {
           <ResidenceSidebar />
         </SidebarArchitecture>
         <iframe
-            src="https://architecture-3d.vercel.app/mass-housing"
+            src="https://architecture-3d.vercel.app/residence"
             width="100%"
             height="100%"
             style={{ border: 'none' }}

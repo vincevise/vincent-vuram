@@ -27,129 +27,131 @@ const Page = () => {
   
 
   return (
-    <div className='w-full h-full overflow-y-auto space-y-4 p-4 max-w-7xl'>
-      <BreadCrumbs 
-              items={
-                [
-                  {
-                    label:'Main',
-                    href:'/ui-lib'
-                  },
-                              {
-                    label:'input',
-                    href:'/ui-lib/input'
-                  },
-                ]
-              }
-            />
-                  <h2 className="  text-2xl font-medium">
-                    Inputs
-                  </h2>
-        <div className=' w-full  gap-6   mx-auto flex flex-col '>
-          <InputContainerStyle title='Chips Input with Dowpdown Options'>
-
-                  <SimpleChipsInputDropdown/>
-
-              </InputContainerStyle>
-          <InputContainerStyle title='Chips Input with Dowpdown Options'>
-            <ChipsWithInputSearchColor
-                val={chipsWithInputSearchColor}
-                setVal={setChipsWithInputSearchColor}
-                />
-            </InputContainerStyle>
-            <InputContainerStyle title='Chips Input with Dowdown with Menu Options'>
-
-                <ChipsInput_Menu_Options/>
-              </InputContainerStyle>
-            <InputContainerStyle title='Chips Input Dopdown with searchable options'>
-            <ChipsWithInputSearch 
-                  state={chipsWithInputSearch}
-                  setState={(val:string)=>{
-                    setChipsWithInputSearch(val)
-                  }}
-                  list={[
+    <div className='w-full h-full   overflow-y-auto  p-4 '>
+      <div className='w-full max-w-5xl space-y-4'>
+        <BreadCrumbs 
+                items={
+                  [
                     {
-                      id:'1',
-                      label:'Apple',
-                      value:'apple'
+                      label:'Main',
+                      href:'/ui-lib'
                     },
-                    {
-                      id:'2',
-                      label:'Banana',
-                      value:'banana'
+                                {
+                      label:'input',
+                      href:'/ui-lib/input'
                     },
-                    {
-                      id:'3',
-                      label:'Cherry',
-                      value:'cherry'
-                    }
-                  ]}
-                  
-                />
-            </InputContainerStyle>
-          <InputContainerStyle title='Chips Input Dopdown with searchable options'>
-              <ChipsInputSearch />
+                  ]
+                }
+              />
+                    <h2 className="  text-2xl font-medium">
+                      Inputs
+                    </h2>
+          <div className=' w-full  gap-6  mx-auto flex flex-col '>
+            <InputContainerStyle title='Chips Input with Dowpdown Options'>
 
-          </InputContainerStyle>
-            <InputContainerStyle title='Type And Create Chips Input'>
-            <ChipsInputWithoutDropDown 
-                    val={chipsInputValue} 
-                    setVal={(val:ListI[])=>{
-                      setChipsInputValue(val)
-                    }} 
+                    <SimpleChipsInputDropdown/>
+
+                </InputContainerStyle>
+            <InputContainerStyle title='Chips Input with Dowpdown Options'>
+              <ChipsWithInputSearchColor
+                  val={chipsWithInputSearchColor}
+                  setVal={setChipsWithInputSearchColor}
+                  />
+              </InputContainerStyle>
+              <InputContainerStyle title='Chips Input with Dowdown with Menu Options'>
+
+                  <ChipsInput_Menu_Options/>
+                </InputContainerStyle>
+              <InputContainerStyle title='Chips Input Dopdown with searchable options'>
+              <ChipsWithInputSearch 
+                    state={chipsWithInputSearch}
+                    setState={(val:string)=>{
+                      setChipsWithInputSearch(val)
+                    }}
+                    list={[
+                      {
+                        id:'1',
+                        label:'Apple',
+                        value:'apple'
+                      },
+                      {
+                        id:'2',
+                        label:'Banana',
+                        value:'banana'
+                      },
+                      {
+                        id:'3',
+                        label:'Cherry',
+                        value:'cherry'
+                      }
+                    ]}
                     
                   />
+              </InputContainerStyle>
+            <InputContainerStyle title='Chips Input Dopdown with searchable options'>
+                <ChipsInputSearch />
+
             </InputContainerStyle>
-            
-             
-           
-            
-                <InputContainerStyle title='Input with Search Dropdown'>
-
-                <InputSearch
-                  value={inputValue}
-                  setValue={setInputValue}
-                  placeholder='Search'
-                  searchOptions={[
-                    'Apple',
-                    'Banana',
-                    'Cherry',
-                    'Date',
-                    'Eggplant',
-                    'Zucchini',]} 
-                />
-                </InputContainerStyle>
-
-
-                <InputContainerStyle title='Phone Number Input '>
-
-                <PhoneNumberInput
-                  state={phonenumber}
-                  setState={setPhoneNumber}
-                  setPhoneCode={(val:string)=>{
-                    console.log(val)
-                  }} 
-                />
-                </InputContainerStyle>
-
-                <InputContainerStyle title='Phone Number Input '>
-
-                <ContentEditableWithPresetChips
-                
-                  parsedContentValue={[]}
-                  onChange={()=>{
-
-                  }}
-
-                />
-                </InputContainerStyle>
-
-                 
-                
-
+              <InputContainerStyle title='Type And Create Chips Input'>
+              <ChipsInputWithoutDropDown 
+                      val={chipsInputValue} 
+                      setVal={(val:ListI[])=>{
+                        setChipsInputValue(val)
+                      }} 
+                      
+                    />
+              </InputContainerStyle>
+              
               
             
-        </div>
+              
+                  <InputContainerStyle title='Input with Search Dropdown'>
+
+                  <InputSearch
+                    value={inputValue}
+                    setValue={setInputValue}
+                    placeholder='Search'
+                    searchOptions={[
+                      'Apple',
+                      'Banana',
+                      'Cherry',
+                      'Date',
+                      'Eggplant',
+                      'Zucchini',]} 
+                  />
+                  </InputContainerStyle>
+
+
+                  <InputContainerStyle title='Phone Number Input '>
+
+                  <PhoneNumberInput
+                    state={phonenumber}
+                    setState={setPhoneNumber}
+                    setPhoneCode={(val:string)=>{
+                      console.log(val)
+                    }} 
+                  />
+                  </InputContainerStyle>
+
+                  <InputContainerStyle title='Phone Number Input '>
+
+                  <ContentEditableWithPresetChips
+                  
+                    parsedContentValue={[]}
+                    onChange={()=>{
+
+                    }}
+
+                  />
+                  </InputContainerStyle>
+
+                  
+                  
+
+                
+              
+          </div>
+      </div>
     </div>
   )
 }
