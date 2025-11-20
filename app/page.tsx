@@ -23,6 +23,10 @@ export default function Page(): React.ReactElement {
         className="px-4 lg:px-10  space-y-4 mt-12 py-8"
         // style={backgroundgrid}
       >
+        <h1 className="text-3xl font-bold mb-6 sr-only">
+  Vuram Vincent — Frontend Developer (React & Next.js)
+</h1>
+
         <div className="w-full  max-w-7xl mx-auto grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-6 lg:grid-cols-9 xl:grid-cols-12">
           <div className="w-full col-span-12 grid sm:grid-cols-2 md:grid-cols-6 lg:grid-cols-9 xl:grid-cols-12 gap-6">
             <div className="col-span-6 grid grid-cols-3 lg:grid-cols-6  gap-6">

@@ -3,6 +3,7 @@ import { ThemeProvider } from "next-themes";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/ui-components/navbar";
+import Script from "next/script";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Vincent Vuram" }],
   creator: "Vincent Vuram",
-  metadataBase: new URL("https://your-domain.com"),
+  metadataBase: new URL("https://vincent-vuram.vercel.app"),
 
   // Favicon
   icons: {
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
     title: "Vuram Vincent | Front End Developer",
     description:
       "Explore the portfolio of Vincent Vuram — skilled in React, Next.js, UI/UX, and modern web development.",
-    url: "https://your-domain.com",
+    url: "https://vincent-vuram.vercel.app",
     siteName: "Vincent Vuram Portfolio",
     images: [
       {
@@ -54,8 +55,9 @@ export const metadata: Metadata = {
     title: "Vuram Vincent | Front End Developer",
     description:
       "React & Next.js developer portfolio of Vincent Vuram.",
-    images: ["/og-image.png"],
-    creator: "@yourTwitterHandle",
+    images: ["/dp1.png"],
+    creator: "@vincevise",
+    site: "@vincevise",
   },
 
   // Basic SEO
@@ -85,6 +87,33 @@ export default function RootLayout({
         <link rel="icon" href="/dp2.png" sizes="64x64" />
         <link rel="shortcut icon" href="/dp2.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <Script
+  id="person-schema"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      name: "Vuram Vincent",
+      alternateName: "Vincent Vuram",
+      description:
+        "Frontend Developer skilled in React, Next.js, TypeScript, UI development, and modern web technologies.",
+      url: "https://vincent-vuram.vercel.app/",
+      image: "https://vincent-vuram.vercel.app/dp2.png",
+      jobTitle: "Frontend Developer",
+      worksFor: {
+        "@type": "Organization",
+        name: "Zigment AI",
+      },
+      sameAs: [
+        "https://www.linkedin.com/in/vuram-vincent/",
+        "https://github.com/vuramvincent",
+      ],
+    }),
+  }}
+/>
+
+
       </head>
 
       <body
