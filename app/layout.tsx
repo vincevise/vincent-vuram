@@ -83,9 +83,6 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" type="image/png" href="/dp2.png" sizes="32x32" />
-        <link rel="icon" href="/dp2.png" sizes="64x64" />
-        <link rel="shortcut icon" href="/dp2.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     <Script
   id="person-schema"
