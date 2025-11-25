@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     siteName: "Vincent Vuram Portfolio",
     images: [
       {
-        url: "/dp1.png", // create one later
+        url: "/dp2.png", // create one later
         width: 1200,
         height: 630,
         alt: "Vincent Portfolio Preview",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     title: "Vuram Vincent | Front End Developer",
     description:
       "React & Next.js developer portfolio of Vincent Vuram.",
-    images: ["/dp1.png"],
+    images: ["/dp2.png"],
     creator: "@vincevise",
     site: "@vincevise",
   },
@@ -84,6 +84,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.png" />
+        <link rel="shortcut icon" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/dp2.png" />
     <Script
   id="person-schema"
   type="application/ld+json"

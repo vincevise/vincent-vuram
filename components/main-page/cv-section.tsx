@@ -39,7 +39,7 @@ const CvSection = (props: Props) => {
           <li>• Built the complete frontend architecture using <strong>Next.js, React 18, and TypeScript</strong></li>
           <li>• Designed and implemented a full internal <strong>design system</strong> with shadcn/ui + Tailwind</li>
           <li>• Engineered the <strong>AI Workflow Builder</strong> using React Flow</li>
-          <li>• Developed a <strong>multi-channel messaging suite</strong> (WhatsApp, LinkedIn, Email, Voice via LiveKit)</li>
+          <li>• Developed a <strong>multi-channel messaging suite</strong> (WhatsApp, LinkedIn, Email)</li>
           <li>• Created a high-performance <strong>embeddable chat widget</strong> installable with a single script</li>
           <li>• Shipped <strong>AI-powered analytics dashboards</strong> and custom SQL-style reporting tools</li>
           <li>• Built authentication, RBAC, and multi-workspace systems for enterprise-grade scaling</li>
@@ -67,7 +67,7 @@ const CvSection = (props: Props) => {
         <h3 className="text-md font-semibold mb-3">Tech Stack</h3>
         <p className="text-gray-700 leading-relaxed">
           Next.js, React 18, TypeScript, Tailwind CSS, shadcn/ui, React Flow, React Query, 
-          Vite, Chart.js, Framer Motion, LiveKit, Axios, PostHog, Radix UI, D3.js
+          Vite, Chart.js, Framer Motion, Axios, Radix UI, 
         </p>
       </div>
                       </div>
