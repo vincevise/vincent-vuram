@@ -21,40 +21,36 @@ export default function Page(): React.ReactElement {
     <React.StrictMode>
       <div
         className="px-4 lg:px-10  space-y-4 mt-12 py-8"
-        // style={backgroundgrid}
+      // style={backgroundgrid}
       >
         <h1 className="text-3xl font-bold mb-6 sr-only">
-  Vuram Vincent — Frontend Developer (React & Next.js)
-</h1>
+          Vuram Vincent — Frontend Developer (React & Next.js)
+        </h1>
 
         <div className="w-full  max-w-7xl mx-auto grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-6 lg:grid-cols-9 xl:grid-cols-12">
-          <div className="w-full col-span-12 grid sm:grid-cols-2 md:grid-cols-6 lg:grid-cols-9 xl:grid-cols-12 gap-6">
-            <div className="col-span-6 grid grid-cols-3 lg:grid-cols-6  gap-6">
-              <ItemContainer>
-                <div className="w-full h-full flex flex-col gap-2 justify-between items-start text-left  p-4">
-                  <Image
-                    src={"/dp2.png"}
-                    alt="my dp"
-                    className="w-28  h-auto object-contain"
-                    width={100}
-                    height={100}
-                  />
-                  <p className="">
-                    {`I'm`} <strong>Vuram Vincent</strong> , a developer with an
-                    architectural background from Bangalore. {`I'm`} interested in
-                    Full Stack Development, UI/UX Design, Architecture, Creative
-                    Coding, Spatial Design, and Art.
-                  </p>
-                </div>
-              </ItemContainer>
-                <BangaloreMap />
-              <ContactGrid/>
+          <ItemContainer>
+            <div className="w-full h-full flex flex-col gap-2 justify-between items-start text-left  p-4">
+              <Image
+                src={"/dp2.png"}
+                alt="my dp"
+                className="w-28  h-auto object-contain"
+                width={100}
+                height={100}
+              />
+              <p className="">
+                {`I'm`} <strong>Vuram Vincent</strong> , a developer with an
+                architectural background from Bangalore. {`I'm`} interested in
+                Full Stack Development, UI/UX Design, Architecture, Creative
+                Coding, Spatial Design, and Art.
+              </p>
             </div>
+          </ItemContainer>
+          <BangaloreMap />
+          <ContactGrid />
 
-            <CvSection />
-          </div>
+          <CvSection />
           <div className="col-span-12 lg:col-span-3 group relative contianer-border-style">
-            <NoSignal/>
+            <NoSignal />
             {/* <Link className="w-full block h-full relative " href={"/work"}>
             <motion.div whileHover={{ scale: 1.1 }} className="cursor-pointer">
               <div className="text-xl font-medium text-black absolute top-6 left-6">
@@ -72,10 +68,9 @@ export default function Page(): React.ReactElement {
             </Link> */}
           </div>
 
-           <SkillSection/>
+          <SkillSection />
 
-          <ObjectSection/>
-           <div className="col-span-2 md:col-span-6 lg:col-span-12 w-full  max-w-7xl mx-auto grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-6 lg:grid-cols-9 xl:grid-cols-12  ">
+          <ObjectSection />
           <ItemContainer href="/3d/urban" title="Urban Design">
             <Image
               src="/3d/urban/urban.png"
@@ -87,7 +82,7 @@ export default function Page(): React.ReactElement {
           </ItemContainer>
 
           <ItemContainer
-            href="/ui-lib"  
+            href="/ui-lib"
             title="UI Library"
           >
             <Image
@@ -96,9 +91,9 @@ export default function Page(): React.ReactElement {
               width={400}
               height={400}
               className="w-full p-4 h-auto object-contain"
-            /> 
+            />
           </ItemContainer>
-          
+
           <ItemContainer
             title="Safakat"
             href="/3d/safakat"
@@ -111,7 +106,7 @@ export default function Page(): React.ReactElement {
               className="w-full h-auto object-contain"
             />
           </ItemContainer>
-          
+
           <ItemContainer title="Residence" href="/3d/residence">
             <Image
               src="/3d/residence/residence5.png"
@@ -141,7 +136,7 @@ export default function Page(): React.ReactElement {
               className="w-full h-auto object-contain"
             />
           </ItemContainer>
-          
+
           <ItemContainer title="Mass Housing" href="/3d/masshousing">
             <Image
               src="/3d/masshousing/masshousing.jpg"
@@ -161,12 +156,12 @@ export default function Page(): React.ReactElement {
               className="w-full h-full object-contain"
             />
           </ItemContainer>
-           <ItemContainer  
+          <ItemContainer
           //  href="/https://google-keep-clone-eta-steel.vercel.app/"
-           >
+          >
             <div className="w-full h-full flex ">
               <div className=" h-full px-0.5 flex flex-col justify-end py-4 bg-gray-100 rounded-l-md  cursor-move  ">
-                <PiDotsSixVerticalBold className="w-8 h-8"/> 
+                <PiDotsSixVerticalBold className="w-8 h-8" />
               </div>
               <div className="w-full h-full p-3 text-left flex flex-col">
                 <div className="w-full h-full">
@@ -180,8 +175,8 @@ export default function Page(): React.ReactElement {
                     </p>
                   </div>
                   <div className="mt-10 w-full flex-wrap flex items-center gap-2">
-                    <Chip value="PERN"  onClose={()=>{}}/>
-                    <Chip value="T3-Stack"  onClose={()=>{}}/>
+                    <Chip value="PERN" onClose={() => { }} />
+                    <Chip value="T3-Stack" onClose={() => { }} />
                   </div>
 
                 </div>
@@ -197,25 +192,24 @@ export default function Page(): React.ReactElement {
               className="w-full h-full object-cover"
             /> */}
           </ItemContainer>
-           <ItemContainer  
+          <ItemContainer
           //  href="/https://google-keep-clone-eta-steel.vercel.app/"
-           >
-             <SocioGramPost/>
-            
+          >
+            <SocioGramPost />
+
           </ItemContainer>
           <div className="col-span-6 aspect-square contianer-border-style h-[calc(100vh-100px)]">
             {/* <AestheticSceneR3F /> */}
             <iframe
-            src="https://architecture-3d.vercel.app/aesthetic"
-            width="100%"
-            height="100%"
-            style={{ border: 'none' }}
-            allowFullScreen
-          />
+              src="https://architecture-3d.vercel.app/aesthetic"
+              width="100%"
+              height="100%"
+              style={{ border: 'none' }}
+              allowFullScreen
+            />
           </div>
         </div>
-          
-        </div>
+
       </div>
     </React.StrictMode>
   );
