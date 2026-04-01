@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/:path*',
-        destination: 'https://vincent-vuram.vercel.app',
+        destination: 'https://vincentvuram.vercel.app/',
         permanent: true, // 308 redirect (SEO friendly)
       },
     ]
